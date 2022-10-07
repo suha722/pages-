@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+   height: 2000px;
+    font-family: 'Cairo', sans-serif;
+}
+
+
+ul{
+    list-style: none    ;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/* smail */
+@media (min-width:768px){
+.container 
+{width: 750px;}
+
+}
+/*meduim  */
+@media (min-width:992px){
+    .container 
+    {width: 970px;}
+
+}
+/* large */
+@media (min-width:1200px){
+    .container
+    {
+        width:1170px;}
+
+}
+header{ 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: solid 3px gray ;
+    min-height: 70px;
+    
+}
+header .container .brand {
+    color: rgb(15, 204, 40);
+    font-size: 50px;
+
+}
+
+header .container nav { 
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+     align-items: center; 
+
+}
+header .container nav .toggle {
+
+    color: rgba(190, 186, 212, 0.322);
+    font-size: 20px;
+
+} 
+@media(min-width:768px){
+    header .container nav .toggle 
+    {
+        display: none;}
+    }
+header .container nav .toggle:hover + ul {
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    top: 100%;
+    left:0;
+    background-color: rgba(115, 187, 0, 0.87);
+    width: 100%;
+
+
+}
+
+
+header .container nav .toggle:hover + ul li a {
+
+     padding: 10px;
+     border-bottom: rgba(81, 200, 236, 0.589) 1px solid;
+}
+header .container nav  ul{
+    display: flex;
+
+}
+@media(max-width:768px){
+   header .container nav ul 
+   {
+       display: none;}
+    }
+header .container nav ul li a {
+    display: block;
+    text-decoration:none;
+    color: rgba(26, 24, 21, 0.842);
+    padding: 30px 20px;
+    }
+ 
+header .container nav ul li a.active ,
+header .container nav ul li a:hover {
+    color:red;
+
+}
