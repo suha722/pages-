@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../image/pic.jpg);
+   height: 100px;
+    font-family: 'Cairo', sans-serif;
+}
+
+ .hell{
+    background-color: rgb(204, 69, 69);
+    color: white;
+    height: 50%;
+    width: 50%;
+     /* position:relative;  */
+   text-align: center;
+   padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50%;
+    margin-top: 250px;
+    min-height: 90px;
+    bottom: 500px;
+    opacity: .5px;
+} 
+ .prag {
+    background-color: rgb(219, 134, 134);
+    color: white;
+    height: 100px;
+    width: 50px;
+    font-family: 'Cairo', sans-serif;
+    margin: 100px;
+      position:fixed; 
+    
+    text-align: center; 
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    margin-top: 80px;
+     min-height: 90px; 
+    bottom: 500px;
+} 
+
+ul{
+    list-style: none    ;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 90px;
+    position: sticky;
+    bottom : 0px;
+}
+/* smail */
+@media (min-width:768px){
+.container{width: 750px;}
+
+}
+/*meduim  */
+@media (min-width:992px){
+    .container{width: 970px;}
+
+}
+/* large */
+@media (min-width:1200px){
+    .container{width:1170px;}
+
+}
+header{
+    
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: solid 3px gray ;
+}
+header .container .brand {
+    color: cadetblue;
+    font-size: 50px;
+
+}
+
+header .container nav { 
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+     align-items: center; 
+
+}
+header .container nav .toggle{
+    align-items: center;
+    color: rgba(26, 15, 85, 0.322);
+    font-size: 20px;
+} 
+header .container nav .far fa-search{
+    align-items: center;
+    color: black;
+    font-size: 20px;
+}
+
+@media(min-width:768px){
+    header .container nav .toggle 
+    {
+        display: none;}
+
+}
+
+header .container nav ul {
+    display:flex;
+
+ }
+ @media(max-width:768px){
+    header .container nav ul {
+        display: none;
+    }
+ }
+ header .container nav ul li  {
+     display: flex;
+     
+ }
+
+header .container nav ul li a {
+    display: block;
+    text-decoration:none;
+    color: rgb(236, 221, 221);
+    padding: 30px 20px;
+    font-weight: bold;
+}
+
+header .container nav ul li a.active,
+header .container nav ul li a:hover {
+    color:red;
+    
+
+}
+div input:focus{
+    outline: 1px solid green ;
+    background-color: thistle;
+    width: 300px;
+
+}

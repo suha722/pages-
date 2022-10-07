@@ -1,0 +1,14 @@
+body{
+    background-color:brown
+}
+div{
+color:indianred;
+color: white;}
+.first{
+    background-color: green;
+    width: 400px;
+    padding: 20px;
+    border-width: 5px 3px 7px ;
+    border-color:yellow peru red pink;
+    border-style: solid dashed ;
+}
